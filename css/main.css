@@ -739,6 +739,8 @@ header {
     background-color: #ddd;
     position: relative;
     padding-bottom: 6.25rem; }
+    .c-intro__text-area p {
+      font-size: 1.3125rem; }
 
 @media only screen and (max-width: 719px) {
   .c-logo {
