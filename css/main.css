@@ -610,8 +610,8 @@ h2 {
 .c-button {
   font-size: 1.25rem;
   line-height: 1.5;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   border-radius: 0.5rem;
@@ -777,6 +777,9 @@ header {
 .c-price {
   font-size: 3rem;
   font-weight: 700; }
+  .c-price__box {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    padding: 2.5rem; }
 
 .c-section {
   position: relative;
