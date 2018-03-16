@@ -735,6 +735,10 @@ header {
       @media only screen and (min-width: 720px) {
         .c-intro__quote-author {
           font-size: 1.875rem; } }
+  .c-intro__text-area {
+    background-color: #ddd;
+    position: relative;
+    padding-bottom: 6.25rem; }
 
 @media only screen and (max-width: 719px) {
   .c-logo {
