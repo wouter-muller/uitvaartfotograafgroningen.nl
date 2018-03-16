@@ -1,0 +1,104 @@
+// --------------------------------------------------------
+// Fallback styles for browsers that don't support CSS grid
+// --------------------------------------------------------
+
+@mixin fallback-styles
+  +clear-float
+  margin-left: -$site__default-spacing
+
+  > div
+    float: left
+    padding-left: $site__default-spacing
+    margin-bottom: $site__default-spacing
+
+// --------------------------------------------------------
+// Put default styles in a mixin so we can reuse it anywhere
+// --------------------------------------------------------
+
+@mixin default-styles-for-grids
+
+  &:not(.l-grid--no-gap)
+    +media-query(s)
+      > *
+        margin-bottom: $site__default-spacing
+
+  +media-query(ml)
+    +grid-support
+      display: grid
+      grid-gap: $site__default-spacing * 2 // gap between grid cells
+
+    +no-grid-support
+      +fallback-styles
+
+// --------------------------------------------------------
+// Equal-width column grids (tablet+desktop)
+// --------------------------------------------------------
+
+$number-of-columns: 2, 3, 4, 5, 6, 8
+
+@each $i in $number-of-columns
+  .l-grid--#{$i}-cols
+    +default-styles-for-grids
+
+    +media-query(ml)
+      +grid-support
+        grid-template-columns: repeat($i, 1fr)
+
+      +no-grid-support
+        > div
+          width: percentage(1 / $i)
+
+// --------------------------------------------------------
+// Equal-width column grids (mobile)
+// --------------------------------------------------------
+
+$number-of-columns: 2
+
+@each $i in $number-of-columns
+  .l-grid--#{$i}-cols\@s
+    +media-query(s)
+      +grid-support
+        display: grid
+        grid-template-columns: repeat($i, 1fr)
+        grid-gap: $site__default-spacing
+
+      +no-grid-support
+        +fallback-styles
+
+        > div
+          width: percentage(1 / $i)
+
+// --------------------------------------------------------
+// Optional grid modifiers
+// --------------------------------------------------------
+
+.l-grid--no-gap
+  +grid-support
+    grid-gap: 0
+
+  +no-grid-support
+    > div
+      padding: 0
+
+.l-grid--small-gap
+  +grid-support
+    grid-gap: ($site__default-spacing / 2)
+
+  +no-grid-support
+    > div
+      padding: ($site__default-spacing / 2)
+
+.l-grid--rtl
+  direction: rtl
+
+  > *
+    direction: ltr
+
+.l-grid--align-top
+  align-items: start
+
+.l-grid--align-center
+  align-items: center
+
+.l-grid--align-bottom
+  align-items: end

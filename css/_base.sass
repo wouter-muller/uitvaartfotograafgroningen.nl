@@ -1,0 +1,68 @@
+// ----------------------------------------------------------------------------
+// Global styles
+//
+// This file contains styles for global/top level elements. Be very conservative
+// here. If you set too specific rules here, you will have many issues down
+// the road.
+// ----------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------
+// Some basic resetting... The approach we use is that elements do not have
+// any margin or padding by default, until explicitly set otherwise. This
+// promotes a more logical and predictable code base.
+// ----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after
+  box-sizing: border-box // This forces padding to not affect height or width of an element
+  margin: 0
+  padding: 0
+
+\:root
+  color: $main-text-color
+  background-color: $main-bg-color
+  -webkit-font-smoothing: antialiased;
+
+  +media-query(s)
+    font-size: 17px
+
+  +media-query(m)
+    font-size: 15px
+
+  +media-query(l)
+    font-size: 16px
+
+html,
+body
+  +size(100%)
+
+// ----------------------------------------------------------------------------
+// Font-family declaration
+//
+// This is the only place where the font-family property should be used:
+// ----------------------------------------------------------------------------
+
+body,
+button,
+input,
+select,
+textarea
+  font-family: Source Sans Pro, Arial
+
+a
+  text-decoration: none
+  color: $main-text-color
+  outline: none
+
+button
+  background-color: transparent
+  border: 0
+  cursor: pointer
+  outline: 0
+
+ul
+  li
+    list-style: none
+

@@ -1,0 +1,12 @@
+@mixin wrapper($size: "default")
+  margin-left: auto
+  margin-right: auto
+  padding-left: $site__default-spacing
+  padding-right: $site__default-spacing
+
+  @if ($size == "small")
+    max-width: $site__width--small
+  @else if ($size == "medium")
+    max-width: $site__width--medium
+  @else
+    max-width: $site__width--large

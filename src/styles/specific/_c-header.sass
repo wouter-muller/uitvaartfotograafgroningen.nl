@@ -1,0 +1,14 @@
+header
+  background-color: rgba($inverted-bg-color, 0.75)
+
+  +media-query(ml)
+    width: 100%
+    +z-index(header)
+    position: fixed
+
+.c-header
+  +media-query(ml)
+    display: grid
+    grid-template-columns: px(200) 1fr
+    align-items: center
+

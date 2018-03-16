@@ -1,0 +1,26 @@
+//----------------------------------------------------------
+// Z-index variables
+//
+// Always use this mixin when you are declaring a z-index.
+// Never just use a static value.
+//
+// Example:
+// .modal-popup {
+//   @include z-index(modal);
+// }
+//
+// This idea is inspired by:
+// https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/
+//----------------------------------------------------------
+
+// This is a list that is sorted, items lower in the list
+// will get a higher z-index automatically.
+//
+// If you do not set a z-index, it will have "0" as default
+
+$z-index-elements: (header);
+
+// Z-index mixin
+@mixin z-index($element) {
+  z-index: index($z-index-elements, $element) * 10;
+}

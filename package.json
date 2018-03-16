@@ -1,0 +1,31 @@
+{
+  "name": "imt",
+  "version": "1.0.0",
+  "description": "intermusictherapy",
+  "author": "Bencom Group B.V.",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^1.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-include": "^2.3.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin": "^5.3.1",
+    "imagemin-webp": "^4.0.0",
+    "jquery": "^3.2.1",
+    "node-sass-magic-importer": "^5.0.0-alpha.15"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

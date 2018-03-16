@@ -1,0 +1,22 @@
+.c-button
+  font-size: px(20)
+  line-height: 1.5
+  +padding-left-right(px($input__padding-left-right))
+  +padding-top-bottom(px(10))
+  border-radius: px(8)
+  border: 0
+  color: $inverted-text-color
+  cursor: pointer
+  display: inline-block
+  outline: none
+  position: relative
+  text-align: center
+  min-width: px(40)
+  background-color: $inverted-bg-color
+  transition: all 0.5s
+
+  &:hover
+    transform: scale(1.1)
+
+  &.\--full-size
+    width: 100%

@@ -1,0 +1,26 @@
+// ----------------------------------------------------------------------------
+// Feature queries
+//
+// More info: https://davidwalsh.name/css-supports
+//
+// Example:
+//
+// .grid
+//   @include grid-support
+//     ...
+//
+//   @include no-grid-support
+//     ...
+// ----------------------------------------------------------------------------
+
+// Feature query that detects if a browser supports CSS Grid
+@mixin grid-support
+  @supports (grid-auto-rows: 1px)
+    @content
+
+// Feature query that detects if a browser does not support CSS Grid
+@mixin no-grid-support
+  @supports not (grid-auto-rows: 1px) // Edge
+    @content
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) // IE
+    @content

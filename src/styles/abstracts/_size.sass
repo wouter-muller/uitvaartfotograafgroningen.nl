@@ -1,0 +1,26 @@
+// Simple mixin to set the height and width of an element in 1 rule
+//
+// Example:
+//
+// +size(64px, 128px)
+//
+// results in:
+//
+// width: 64px
+// height: 128px
+//
+// If you only set 1 value, the value will be used for both
+// width and height, so you get a square box.
+//
+// Example:
+//
+//   +size(128px)
+//
+// results in:
+//
+// width: 128px
+// height: 128px
+
+@mixin size($width, $height: $width)
+  width: $width
+  height: $height

@@ -1,0 +1,17 @@
+// ----------------------------------------------------------------------------
+// Px 2 rem conversion function
+//
+// Example:
+//
+// Instead of this:
+// font-size: 12px;
+//
+// You do this:
+// font-size: px(12);
+//
+// Output: font-size: 1,333333333rem;
+// ----------------------------------------------------------------------------
+
+@function px($value)
+  @return ($value / 16) * 1rem
+  // @return $value * 1px // uncomment this to turn off px2rem scaling

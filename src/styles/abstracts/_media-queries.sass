@@ -1,0 +1,31 @@
+// Media query breakpoints
+
+$breakpoint__medium: 720px
+$breakpoint__large: 1050px
+
+@mixin media-query($size)
+
+  // Mixin generally used for mobile devices
+  @if ($size == "s")
+    @media only screen and (max-width: $breakpoint__medium - 1)
+      @content
+
+  // Mixin generally used for tablets
+  @if ($size == "m")
+    @media only screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large - 1)
+      @content
+
+  // Mixin generally used for desktop
+  @if ($size == "l")
+    @media only screen and (min-width: $breakpoint__large)
+      @content
+
+  // Mixin generally used for mobile devices and tablets
+  @if ($size == "sm")
+    @media only screen and (max-width: $breakpoint__large - 1)
+      @content
+
+  // Mixin generally used for tablets and desktop
+  @if ($size == "ml")
+    @media only screen and (min-width: $breakpoint__medium)
+      @content

@@ -1,0 +1,152 @@
+// ----------------------------------------------------------------------------
+// Utility helpers for margins
+//
+// Examples:
+// <div class="u-mb"></div>   <-- standard margin-bottom
+// <div class="u-mr"></div>   <-- standard margin-right
+// <div class="u-mh"></div>   <-- standard horizontal margin (left and right)
+// <div class="u-mv"></div>   <-- standard vertical margin (top and bottom)
+//
+// <div class="u-mb--"></div> <-- very small margin bottom
+// <div class="u-mb-"></div>  <-- small margin bottom
+//
+// <div class="u-mb+"></div>  <-- large margin bottom
+// <div class="u-mb++"></div> <-- very large margin bottom
+//
+// <div class="u-mb0"></div>  <-- override a margin so it has no margin (use only in exceptions!)
+//
+// Mobile
+//
+// If you only want to target small screens (so basically mobile devices),
+// add @s at the end of the class
+//
+// Examples:
+// <div class="u-mb@s"></div>
+// <div class="u-mb++@s"></div>
+// <div class="u-mr0@s"></div>
+//
+// This file is quite long, complex and results in a lot of redundant compiled
+// CSS (are we ever going to use .ml++@s?) but as soon as CSS custom properties get better browser support, we can
+// replace this. See for example https://seesparkbox.com/foundry/manageable_utility_systems_with_css_variables
+// ----------------------------------------------------------------------------
+
+.u-m
+  $directions-array: "", t, l, b, r
+
+  $directions-map: ("t": "-top", "l": "-left", "b": "-bottom", "r": "-right")
+
+  @each $direction in $directions-array
+
+    &#{$direction}0
+      margin#{map-get($directions-map, $direction)}: 0
+
+    &#{$direction}--
+      margin#{map-get($directions-map, $direction)}: $site__default-spacing / 4
+
+    &#{$direction}-
+      margin#{map-get($directions-map, $direction)}: $site__default-spacing / 2
+
+    &#{$direction}
+      margin#{map-get($directions-map, $direction)}: $site__default-spacing
+
+    &#{$direction}\+
+      margin#{map-get($directions-map, $direction)}: $site__default-spacing * 2
+
+    &#{$direction}\+\+
+      margin#{map-get($directions-map, $direction)}: $site__default-spacing * 4
+
+    +media-query(s)
+      &#{$direction}0\@s
+        margin#{map-get($directions-map, $direction)}: 0
+
+      &#{$direction}--\@s
+        margin#{map-get($directions-map, $direction)}: $site__default-spacing / 4
+
+      &#{$direction}-\@s
+        margin#{map-get($directions-map, $direction)}: $site__default-spacing / 2
+
+      &#{$direction}\@s
+        margin#{map-get($directions-map, $direction)}: $site__default-spacing
+
+      &#{$direction}\+\@s
+        margin#{map-get($directions-map, $direction)}: $site__default-spacing * 2
+
+      &#{$direction}\+\+\@s
+        margin#{map-get($directions-map, $direction)}: $site__default-spacing * 4
+
+  // // Horizontal margin
+  // &h0
+  //   +margin-left-right(0)
+
+  // &h--
+  //   +margin-left-right($site__default-spacing / 4)
+
+  // &h-
+  //   +margin-left-right($site__default-spacing / 2)
+
+  // &h
+  //   +margin-left-right($site__default-spacing)
+
+  // &h\+
+  //   +margin-left-right($site__default-spacing * 2)
+
+  // &h\+\+
+  //   +margin-left-right($site__default-spacing * 4)
+
+
+  // +media-query(s)
+  //   &h\@s0
+  //     +margin-left-right(0)
+
+  //   &h--\@s
+  //     +margin-left-right($site__default-spacing / 4)
+
+  //   &h-\@s
+  //     +margin-left-right($site__default-spacing / 2)
+
+  //   &h\@s
+  //     +margin-left-right($site__default-spacing)
+
+  //   &h\+\@s
+  //     +margin-left-right($site__default-spacing * 2)
+
+  //   &h\+\+\@s
+  //     +margin-left-right($site__default-spacing * 4)
+
+  // Vertical margin
+  &v0
+    +margin-top-bottom(0)
+
+  &v--
+    +margin-top-bottom($site__default-spacing / 4)
+
+  &v-
+    +margin-top-bottom($site__default-spacing / 2)
+
+  &v
+    +margin-top-bottom($site__default-spacing)
+
+  &v\+
+    +margin-top-bottom($site__default-spacing * 2)
+
+  &v\+\+
+    +margin-top-bottom($site__default-spacing * 4)
+
+  +media-query(s)
+    &v0\@s
+      +margin-top-bottom(0)
+
+    &v--\@s
+      +margin-top-bottom($site__default-spacing / 4)
+
+    &v-\@s
+      +margin-top-bottom($site__default-spacing / 2)
+
+    &v\@s
+      +margin-top-bottom($site__default-spacing)
+
+    &v\+\@s
+      +margin-top-bottom($site__default-spacing * 2)
+
+    &v\+\+\@s
+      +margin-top-bottom($site__default-spacing * 4)

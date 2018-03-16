@@ -1,0 +1,30 @@
+// ----------------------------------------------------------------------------
+// Background image mixin that does 3 things:
+//
+// 1) It puts the base image folder as default so you can skip that part.
+// 2) It adds "background-repeat: no-repeat" by default, cause you always need this
+//
+// JPG example:
+//
+// .element
+//   +bg-image("photos/team.jpg")
+//
+// Results in:
+//
+// .element {
+//   background-repeat: no-repeat
+//   background-image: url("/dist/images/photos/team.jpg")
+// }
+// ----------------------------------------------------------------------------
+
+@mixin background-image($file)
+  background-image: url($site__image-path + $file)
+  background-repeat: no-repeat
+
+@mixin bg-full-size-image($file)
+  background-repeat: no-repeat
+  background-image: url($site__image-path + $file)
+  height: 100vh
+  background-size: cover
+  background-position: center center
+  position: relative

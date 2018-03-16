@@ -1,0 +1,17 @@
+.c-logo
+  +media-query(s)
+    text-align: center
+
+  img
+    padding: px(10) 0
+
+    +media-query(s)
+      width: px(125)
+
+    +media-query(ml)
+      transition: width .5s
+      width: px(200)
+
+      &.\--small
+        width: px(120)
+        padding: 0
