@@ -736,7 +736,7 @@ header {
         .c-intro__quote-author {
           font-size: 1.875rem; } }
   .c-intro__text-area {
-    background-color: #ddd;
+    background-color: #f5f5f5;
     position: relative;
     padding-bottom: 6.25rem; }
     .c-intro__text-area p {
