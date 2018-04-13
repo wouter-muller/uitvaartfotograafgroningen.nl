@@ -803,4 +803,10 @@ header {
     padding-right: 1.25rem;
     max-width: 1380px; }
 
+.mv-bar.mv-ui {
+  position: fixed !important;
+  bottom: 0 !important;
+  top: auto !important;
+  margin-bottom: 0 !important; }
+
 /*# sourceMappingURL=main.css.map */
