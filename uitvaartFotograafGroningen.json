@@ -20,28 +20,12 @@
 	"pricesBox1Price": "€ 350",
 	"pricesBox1Description": "USB stick met 100 foto's",
 	"pricesBox1Photobook": " ",
-	"getInTouch": [
-		"#contact",
-		"#contact",
-		"#contact"
-	],
+	"getInTouch": "Neem contact met mij op",
 	"pricesBox2Title": "Standaard pakket",
-	"pricesBox2Duration": [
-		"4 uur",
-		"6 uur"
-	],
-	"pricesBox2Price": [
-		"€ 800",
-		"€ 1100"
-	],
-	"pricesBox2Description": [
-		"USB stick met 300 foto's",
-		"USB stick met 400 foto's"
-	],
-	"pricesBox2Photobook": [
-		"Fotoboek 20x20 cm",
-		"Fotoboek 30x30 cm"
-	],
+	"pricesBox2Duration": "4 uur",
+	"pricesBox2Price": "€ 800",
+	"pricesBox2Description": "USB stick met 300 foto's",
+	"pricesBox2Photobook": "Fotoboek 20x20 cm",
 	"pricesBox3Title": "Uitgebreid pakket",
 	"pricesDisclaimer1": "Reiskosten: de eerste 20 km zijn in de prijs inbegrepen gerekend vanaf de stad Groningen. Daarbuiten geldt het tarief € 0,23 per km.",
 	"pricesDisclaimer2": "Alle prijzen zijn incl. BTW.",
