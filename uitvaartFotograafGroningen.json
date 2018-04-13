@@ -20,28 +20,12 @@
 	"pricesBox1Price": "€ 350",
 	"pricesBox1Description": "USB stick met 100 foto's",
 	"pricesBox1Photobook": " ",
-	"getInTouch": [
-		"#contact",
-		"#contact",
-		"#contact"
-	],
+	"getInTouch": "Neem contact met mij op",
 	"pricesBox2Title": "Standaard pakket",
-	"pricesBox2Duration": [
-		"4 uur",
-		"6 uur"
-	],
-	"pricesBox2Price": [
-		"€ 800",
-		"€ 1100"
-	],
-	"pricesBox2Description": [
-		"USB stick met 300 foto's",
-		"USB stick met 400 foto's"
-	],
-	"pricesBox2Photobook": [
-		"Fotoboek 20x20 cm",
-		"Fotoboek 30x30 cm"
-	],
+	"pricesBox2Duration": "4 uur",
+	"pricesBox2Price": "€ 800",
+	"pricesBox2Description": "USB stick met 300 foto's",
+	"pricesBox2Photobook": "Fotoboek 20x20 cm",
 	"pricesBox3Title": "Uitgebreid pakket",
 	"pricesDisclaimer1": "Reiskosten: de eerste 20 km zijn in de prijs inbegrepen gerekend vanaf de stad Groningen. Daarbuiten geldt het tarief € 0,23 per km.",
 	"pricesDisclaimer2": "Alle prijzen zijn incl. BTW.",
@@ -51,12 +35,16 @@
 	"reviewsReview1Author": "Ellen Nooren | Ellen Nooren Uitvaartverzorging",
 	"reviewsReview2Paragraph1": "“Een fotoreportage maken van een emotionele bijeenkomst vraagt discretie en tact, naast professionele fotografievaardigheden. Lyuda heeft deze kwaliteiten allemaal - en wel in ruime mate.” ",
 	"reviewsReview2Author": "J.W. Snoek",
-	"aboutMeTitle": [
-		"#over-mijzelf",
-		"Over mijzelf"
-	],
+	"aboutMeTitle": "Over mijzelf",
 	"pricesBox3Duration": "6 uur",
 	"pricesBox3Price": "€ 1100",
 	"pricesBox3Description": "USB stick met 400 foto's",
-	"pricesBox3Photobook": "Fotoboek 30x30 cm"
+	"pricesBox3Photobook": "Fotoboek 30x30 cm",
+	"aboutMeParagraph1": "Mijn naam is Lyuda Stinissen. Samen met mijn man en onze drie kinderen woon ik in de stad Groningen.",
+	"aboutMeParagraph2": "Sinds een aantal jaren groeit mijn fascinatie voor mensen en emoties, nog meer sinds ik freelance fotograaf ben en wordt opgeleid aan de Fotoacademie in Amsterdam. ",
+	"contactTitle": "Contact",
+	"contactParagraph": "Heeft u interesse of wilt u meer informatie? Neem contact met mij op voor de mogelijkheden.",
+	"getInTouch1": "Neem contact met mij op",
+	"getInTouch2": "Neem contact met mij op",
+	"getInTouch3": "Neem contact met mij op"
 }
