@@ -10,5 +10,49 @@
 	"werkwijzeTitle": "Werkwijze",
 	"werkwijzeParagraph1": "Voor mij is het belangrijk dat u het afscheid kan beleven zoals u dat graag wilt, ook na de uitvaart. Daarom geeft u uw wensen van tevoren aan in een gesprek met de uitvaartverzorger of rechtstreeks met mij.",
 	"werkwijzeParagraph2": "Alle momenten die u belangrijk vindt, leg ik op een discrete manier vast.",
-	"werkwijzeParagraph3": " Ik maak gebruik van professionele apparatuur en lichtgevoelige lenzen om de sfeer vast te leggen zonder een storende flits."
+	"werkwijzeParagraph3": " Ik maak gebruik van professionele apparatuur en lichtgevoelige lenzen om de sfeer vast te leggen zonder een storende flits.",
+	"offerTitle": "Aanbod",
+	"offerParagraph1": "Op de dag zelf ben ik 2, 4 of 6 uur tot uw beschikking om foto’s te nemen, zoals vooraf afgestemd. Alle foto’s worden standaard digitaal aangeleverd op een USB-stick, vooraf zorgvuldig geselecteerd en bewerkt. ",
+	"offerParagraph2": "Als u ook een gedenkwaardig fotoboek bij mij wilt bestellen, dan stel ik deze graag voor u samen. De foto’s worden afgedrukt op echt fotopapier van hoge kwaliteit, standaard platliggend, zonder storende barcodes en logo’s. Het fotoboek kunt u ook achteraf bestellen. ",
+	"pricesTitle": "Prijzen",
+	"pricesBox1Title": "Basis pakket",
+	"pricesBox1Duration": "2 uur",
+	"pricesBox1Price": "€ 350",
+	"pricesBox1Description": "USB stick met 100 foto's",
+	"pricesBox1Photobook": " ",
+	"getInTouch": [
+		"#contact",
+		"#contact",
+		"#contact"
+	],
+	"pricesBox2Title": "Standaard pakket",
+	"pricesBox2Duration": [
+		"4 uur",
+		"6 uur"
+	],
+	"pricesBox2Price": [
+		"€ 800",
+		"€ 1100"
+	],
+	"pricesBox2Description": [
+		"USB stick met 300 foto's",
+		"USB stick met 400 foto's"
+	],
+	"pricesBox2Photobook": [
+		"Fotoboek 20x20 cm",
+		"Fotoboek 30x30 cm"
+	],
+	"pricesBox3Title": "Uitgebreid pakket",
+	"pricesDisclaimer1": "Reiskosten: de eerste 20 km zijn in de prijs inbegrepen gerekend vanaf de stad Groningen. Daarbuiten geldt het tarief € 0,23 per km.",
+	"pricesDisclaimer2": "Alle prijzen zijn incl. BTW.",
+	"reviewsTitle": "Recensies",
+	"reviewsReview1Paragraph1": "“Vorig jaar heb ik Lyuda als fotograaf leren kennen. Zij werd ingezet om de uitvaart van de echtgenoot van een van mijn opdrachtgevers vast te leggen. Het resultaat was ronduit prachtig. Lyuda is een TOP fotograaf. Zij heeft oog voor detail, is op het juiste moment op de juiste plaats. Ze is zichtbaar en onzichtbaar wanneer zij dit moet zijn en heeft een buitengewoon goed gevoel voor composities en invalshoeken bij het maken van de foto’s.",
+	"reviewsReview1Paragraph2": "Het resultaat was een verzameling prachtige opnames van zowel de afscheidsceremonie als de begrafenis zelf, de dag erna. Buitengewoon mooi en waardevol voor de nabestaanden. Ik kan Lyuda van harte aanbevelen!”",
+	"reviewsReview1Author": "– ",
+	"reviewsReview2Paragraph1": "“Een fotoreportage maken van een emotionele bijeenkomst vraagt discretie en tact, naast professionele fotografievaardigheden. Lyuda heeft deze kwaliteiten allemaal - en wel in ruime mate.” ",
+	"reviewsReview2Author": "– ",
+	"aboutMeTitle": [
+		"#over-mijzelf",
+		"Over mijzelf"
+	]
 }
